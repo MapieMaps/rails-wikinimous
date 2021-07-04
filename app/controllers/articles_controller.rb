@@ -18,6 +18,14 @@ class ArticlesController < ApplicationController
     redirect_to article_path(@article.id)
   end
 
+  def edit
+  end
+
+  def update
+    @article.update(article_params)
+    redirect_to article_path(@article.id)
+  end
+
   private
 
 
